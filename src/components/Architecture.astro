@@ -1,0 +1,134 @@
+---
+
+---
+
+<section class="bg-paper-cream border-t border-ink-black/10 py-24">
+    <div class="max-w-screen-xl mx-auto px-6">
+        <!-- Section Header -->
+        <header class="text-center mb-20">
+            <h2
+                class="font-serif text-4xl md:text-5xl font-bold text-ink-black mb-6"
+            >
+                The Philosophy of <span class="italic text-debian-red-muted"
+                    >Architecture</span
+                >.
+            </h2>
+            <p class="font-sans text-lg text-slate-gray max-w-2xl mx-auto">
+                Bridging the gap between human intuition and machine precision.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+            <!-- 1. Speed (RAM) -->
+            <article class="flex flex-col gap-4">
+                <div class="border-l-2 border-debian-red-muted pl-6 py-1">
+                    <h3
+                        class="font-serif text-2xl font-bold text-ink-black mb-2"
+                    >
+                        Thinking at the Speed of Light
+                    </h3>
+                    <p class="font-sans text-slate-gray leading-relaxed mb-4">
+                        Imagine a library where every book you might need is
+                        already floating open in front of you. No walking to the
+                        shelf, no searching—just instant knowledge.
+                    </p>
+                </div>
+                <div
+                    class="bg-ink-black/5 border border-ink-black/10 p-4 rounded-sm font-mono text-xs text-ink-black/80"
+                >
+                    <strong
+                        class="block text-ink-black mb-1 uppercase tracking-wider"
+                        >Blueprint:</strong
+                    >
+                    System loads entirely into <span
+                        class="text-debian-red-muted">RAM-disk</span
+                    > (tmpfs). Execution happens in volatile memory, bypassing I/O
+                    bottlenecks of physical storage media.
+                </div>
+            </article>
+
+            <!-- 2. Resilience (OverlayFS) -->
+            <article class="flex flex-col gap-4">
+                <div class="border-l-2 border-ink-black pl-6 py-1">
+                    <h3
+                        class="font-serif text-2xl font-bold text-ink-black mb-2"
+                    >
+                        The Glass Layer
+                    </h3>
+                    <p class="font-sans text-slate-gray leading-relaxed mb-4">
+                        Your core system is carved in stone, protected and
+                        unchangeable. Your daily work happens on a sheet of
+                        glass placed on top. If you make a mess, simply wipe the
+                        glass clean.
+                    </p>
+                </div>
+                <div
+                    class="bg-ink-black/5 border border-ink-black/10 p-4 rounded-sm font-mono text-xs text-ink-black/80"
+                >
+                    <strong
+                        class="block text-ink-black mb-1 uppercase tracking-wider"
+                        >Blueprint:</strong
+                    >
+                    <span class="text-debian-red-muted">OverlayFS</span> Union Mount.
+                    LowerDir (SFS) is Read-Only/Immutable. UpperDir (RAM) is Read-Write.
+                    Reboot clears UpperDir logic.
+                </div>
+            </article>
+
+            <!-- 3. Portability (SFS) -->
+            <article class="flex flex-col gap-4">
+                <div class="border-l-2 border-ink-black pl-6 py-1">
+                    <h3
+                        class="font-serif text-2xl font-bold text-ink-black mb-2"
+                    >
+                        Your PC in a Pocket
+                    </h3>
+                    <p class="font-sans text-slate-gray leading-relaxed mb-4">
+                        Carrying BookwormPup is like carrying your entire home
+                        office—desk, files, photos, and settings—folded neatly
+                        into your wallet. Plug it in anywhere, and you're home.
+                    </p>
+                </div>
+                <div
+                    class="bg-ink-black/5 border border-ink-black/10 p-4 rounded-sm font-mono text-xs text-ink-black/80"
+                >
+                    <strong
+                        class="block text-ink-black mb-1 uppercase tracking-wider"
+                        >Blueprint:</strong
+                    >
+                    Portable <span class="text-debian-red-muted">SquashFS</span> Image.
+                    Entire OS filesystem compressed into single .sfs container. Kernel
+                    modules drive hardware abstraction.
+                </div>
+            </article>
+
+            <!-- 4. Stability (Debian) -->
+            <article class="flex flex-col gap-4">
+                <div class="border-l-2 border-debian-red-muted pl-6 py-1">
+                    <h3
+                        class="font-serif text-2xl font-bold text-ink-black mb-2"
+                    >
+                        Standing on Shoulders of Giants
+                    </h3>
+                    <p class="font-sans text-slate-gray leading-relaxed mb-4">
+                        We build our lightweight house on the strongest
+                        foundation in the world. You get the agility of a puppy
+                        with the rock-solid reliability of an industrial
+                        fortress.
+                    </p>
+                </div>
+                <div
+                    class="bg-ink-black/5 border border-ink-black/10 p-4 rounded-sm font-mono text-xs text-ink-black/80"
+                >
+                    <strong
+                        class="block text-ink-black mb-1 uppercase tracking-wider"
+                        >Blueprint:</strong
+                    >
+                    <span class="text-debian-red-muted">Debian 12 Bookworm</span
+                    > Binary Compatibility. Access to 50,000+ .deb packages via APT/Synaptic.
+                    Long Term Support (LTS) kernel.
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,120 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="BookwormPup Linux - Modern Retro Experience"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<!-- Google Fonts: Playfair Display (Serif), Inter (Sans), JetBrains Mono (Mono) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<!-- 
+		Body Styles:
+		- bg-paper-cream: #F9F7F1 background
+		- text-ink-black: #222222 text
+		- font-sans: Inter default font
+	-->
+	<body
+		class="bg-paper-cream text-ink-black font-sans min-h-screen flex flex-col antialiased selection:bg-debian-red-muted selection:text-paper-cream"
+	>
+		<!-- Sticky Minimalist Header -->
+		<header
+			class="sticky top-0 z-50 bg-paper-cream/95 backdrop-blur-sm border-b border-ink-black/10 transition-all duration-300"
+		>
+			<nav
+				class="max-w-screen-xl mx-auto px-6 h-16 flex items-center justify-between"
+			>
+				<!-- Logo / Brand -->
+				<a href="/" class="group flex items-center gap-2">
+					<span
+						class="font-serif text-2xl font-bold tracking-tight text-ink-black group-hover:text-debian-red-muted transition-colors"
+					>
+						BookwormPup
+					</span>
+				</a>
+
+				<!-- Navigation Links -->
+				<div class="hidden md:flex items-center gap-8">
+					<a
+						href="#"
+						class="text-sm font-medium hover:text-debian-red-muted transition-colors"
+						>Download</a
+					>
+					<a
+						href="https://wikka.puppylinux.com/HomePage"
+						class="text-sm font-medium hover:text-debian-red-muted transition-colors"
+						>Documentation</a
+					>
+					<a
+						href="https://forum.puppylinux.com/"
+						class="text-sm font-medium hover:text-debian-red-muted transition-colors"
+						>Community</a
+					>
+					<a
+						href="#"
+						class="text-sm font-mono text-slate-gray hover:text-debian-red-muted transition-colors"
+						>v1.0.0</a
+					>
+				</div>
+
+				<!-- Mobile Menu Button (Placeholder) -->
+				<button
+					class="md:hidden p-2 text-ink-black hover:text-debian-red-muted focus:outline-none"
+					aria-label="Menu"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="square"
+							stroke-linejoin="miter"
+							stroke-width="1.5"
+							d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+			</nav>
+		</header>
+
+		<!-- Main Content Slot -->
+		<main class="flex-grow w-full max-w-screen-xl mx-auto px-6 pb-12">
+			<slot />
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-white border-t border-ink-black/10 py-12">
+			<div
+				class="max-w-screen-xl mx-auto px-6 flex flex-col items-center justify-center gap-4 text-center"
+			>
+				<div class="text-sm text-slate-gray font-serif italic">
+					Designed with respect for the Puppy Linux Community.
+				</div>
+				<div class="text-xs text-slate-gray/60 font-mono">
+					&copy; {new Date().getFullYear()} BookwormPup. Built on Debian.
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

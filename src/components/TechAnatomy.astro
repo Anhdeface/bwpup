@@ -1,0 +1,308 @@
+---
+
+---
+
+<section class="bg-paper-cream px-6 py-24 border-t border-ink-black/10">
+    <div class="max-w-screen-xl mx-auto space-y-24">
+        <!-- Section 1: Micro-Spec Grid -->
+        <div>
+            <h2
+                class="font-serif text-3xl font-bold text-ink-black mb-8 border-b border-ink-black/10 pb-4"
+            >
+                System Anatomy
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Woof-CE -->
+                <div
+                    class="group p-6 border border-ink-black/10 hover:border-debian-red-muted/50 transition-colors duration-300"
+                >
+                    <h3
+                        class="font-sans font-bold text-sm uppercase tracking-wider text-slate-gray mb-2"
+                    >
+                        Build System
+                    </h3>
+                    <p
+                        class="font-serif text-2xl font-bold text-ink-black group-hover:text-debian-red-muted transition-colors"
+                    >
+                        Woof-CE
+                    </p>
+                    <p class="text-xs text-slate-gray mt-2">
+                        Latest community edition build infrastructure.
+                    </p>
+                </div>
+
+                <!-- GTK3 -->
+                <div
+                    class="group p-6 border border-ink-black/10 hover:border-debian-red-muted/50 transition-colors duration-300"
+                >
+                    <h3
+                        class="font-sans font-bold text-sm uppercase tracking-wider text-slate-gray mb-2"
+                    >
+                        Toolkit
+                    </h3>
+                    <p
+                        class="font-serif text-2xl font-bold text-ink-black group-hover:text-debian-red-muted transition-colors"
+                    >
+                        GTK+ 3
+                    </p>
+                    <p class="text-xs text-slate-gray mt-2">
+                        Modern, consistent UI toolkit rendering.
+                    </p>
+                </div>
+
+                <!-- X.org -->
+                <div
+                    class="group p-6 border border-ink-black/10 hover:border-debian-red-muted/50 transition-colors duration-300"
+                >
+                    <h3
+                        class="font-sans font-bold text-sm uppercase tracking-wider text-slate-gray mb-2"
+                    >
+                        Display Server
+                    </h3>
+                    <p
+                        class="font-serif text-2xl font-bold text-ink-black group-hover:text-debian-red-muted transition-colors"
+                    >
+                        X.Org
+                    </p>
+                    <p class="text-xs text-slate-gray mt-2">
+                        Proven stability and compatibility.
+                    </p>
+                </div>
+
+                <!-- OverlayFS -->
+                <div
+                    class="group p-6 border border-ink-black/10 hover:border-debian-red-muted/50 transition-colors duration-300"
+                >
+                    <h3
+                        class="font-sans font-bold text-sm uppercase tracking-wider text-slate-gray mb-2"
+                    >
+                        Filesystem
+                    </h3>
+                    <p
+                        class="font-serif text-2xl font-bold text-ink-black group-hover:text-debian-red-muted transition-colors"
+                    >
+                        OverlayFS
+                    </p>
+                    <p class="text-xs text-slate-gray mt-2">
+                        Read-only layered union mount structure.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Audio (Side-by-Side) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Description -->
+            <div class="order-2 lg:order-1">
+                <h3 class="font-serif text-4xl font-bold text-ink-black mb-6">
+                    Professional Grade <span
+                        class="italic text-debian-red-muted">Audio</span
+                    >
+                </h3>
+                <blockquote
+                    class="text-xl font-serif text-ink-black/80 border-l-4 border-debian-red-muted pl-6 py-2 mb-6 italic leading-relaxed"
+                >
+                    "Pipewire delivers low-latency audio processing suitable for
+                    both casual listening and professional work."
+                </blockquote>
+                <p class="font-sans text-lg text-slate-gray leading-[1.8] mb-6">
+                    BookwormPup integrates the modern <strong>Pipewire</strong> multimedia
+                    server, replacing legacy PulseAudio. This ensures seamless handling
+                    of audio streams, improved Bluetooth support, and lower latency.
+                </p>
+                <ul class="space-y-2 text-slate-gray font-sans">
+                    <li class="flex items-center gap-2">
+                        <span
+                            class="w-1.5 h-1.5 bg-debian-red-muted rounded-full"
+                        ></span>
+                        <span>WirePlumber session manager included.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span
+                            class="w-1.5 h-1.5 bg-debian-red-muted rounded-full"
+                        ></span>
+                        <span
+                            >AlsaMixer pre-configured for hardware control.</span
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Retro Window Visual -->
+            <div class="order-1 lg:order-2 flex justify-center">
+                <figure class="relative w-full max-w-md">
+                    <!-- Window Frame -->
+                    <div
+                        class="bg-paper-cream border border-ink-black shadow-[8px_8px_0px_0px_rgba(34,34,34,0.1)] rounded-sm overflow-hidden"
+                    >
+                        <!-- Window Title Bar -->
+                        <div
+                            class="bg-ink-black text-paper-cream px-3 py-1 flex items-center justify-between"
+                        >
+                            <span class="font-mono text-xs font-bold"
+                                >eq-spectrum.exe</span
+                            >
+                            <div class="flex gap-1">
+                                <div
+                                    class="w-2 h-2 bg-paper-cream rounded-full opacity-50"
+                                >
+                                </div>
+                                <div
+                                    class="w-2 h-2 bg-paper-cream rounded-full opacity-50"
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Window Content (CSS Equalizer) -->
+                        <div
+                            class="p-6 bg-[#1a1a1a] h-64 flex items-end justify-between gap-1"
+                        >
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[40%] animate-pulse"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[60%] animate-pulse delay-75"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[30%] animate-pulse delay-100"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[80%] animate-pulse delay-150"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[50%] animate-pulse delay-200"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[90%] animate-pulse delay-300"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[45%] animate-pulse delay-75"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[70%] animate-pulse delay-100"
+                            >
+                            </div>
+                            <div
+                                class="w-full bg-debian-red-muted/80 h-[35%] animate-pulse delay-50"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption
+                        class="mt-4 text-center font-serif italic text-sm text-slate-gray"
+                    >
+                        Fig 1. Real-time audio spectrum visualization.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Section 3: Package Management (Dual-System) -->
+        <div class="bg-white border border-gray-200 p-8 md:p-12">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h3 class="font-serif text-3xl font-bold text-ink-black mb-4">
+                    Dual-Core Package Management
+                </h3>
+                <p class="font-sans text-slate-gray text-lg leading-relaxed">
+                    Seamlessly bridge the gap between Debian's vast repositories
+                    and Puppy Linux's native PET packages.
+                </p>
+            </div>
+
+            <div
+                class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center"
+            >
+                <!-- Connection Line (Desktop) -->
+                <div
+                    class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-px bg-gray-300 z-0"
+                >
+                </div>
+                <div
+                    class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white border border-gray-300 rounded-full flex items-center justify-center z-10 text-slate-gray font-serif italic text-xs"
+                >
+                    &amp;
+                </div>
+
+                <!-- Left: APT -->
+                <div class="text-center md:text-right md:pr-8 z-10">
+                    <div
+                        class="inline-block p-4 mb-4 border border-ink-black/10 rounded-full bg-paper-cream"
+                    >
+                        <!-- Icon: Database/Repo -->
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="square"
+                            stroke-linejoin="miter"
+                            class="text-ink-black"
+                        >
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                            ></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"
+                            ></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h4
+                        class="font-serif text-2xl font-bold text-ink-black mb-2"
+                    >
+                        APT &amp; Synaptic
+                    </h4>
+                    <p class="text-slate-gray font-sans leading-relaxed">
+                        Access over <strong>50,000+ packages</strong> from the official
+                        Debian Bookworm repositories. Full dependency resolution and
+                        security updates.
+                    </p>
+                </div>
+
+                <!-- Right: PPM -->
+                <div class="text-center md:text-left md:pl-8 z-10">
+                    <div
+                        class="inline-block p-4 mb-4 border border-ink-black/10 rounded-full bg-paper-cream"
+                    >
+                        <!-- Icon: Box/PET -->
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="square"
+                            stroke-linejoin="miter"
+                            class="text-ink-black"
+                        >
+                            <polyline points="21 8 21 21 3 21 3 8"></polyline>
+                            <rect x="1" y="3" width="22" height="5"></rect>
+                            <line x1="10" y1="12" x2="14" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h4
+                        class="font-serif text-2xl font-bold text-ink-black mb-2"
+                    >
+                        Puppy Package Manager
+                    </h4>
+                    <p class="text-slate-gray font-sans leading-relaxed">
+                        Install lightweight, optimized <strong>.pet</strong> packages
+                        and SFS modules. Designed specifically for the portable operating
+                        system structure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

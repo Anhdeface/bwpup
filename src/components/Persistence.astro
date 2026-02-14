@@ -1,0 +1,163 @@
+---
+
+---
+
+<section class="bg-paper-cream px-6 py-24 relative overflow-hidden">
+    <div
+        class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+    >
+        <!-- Visual Side (Left) -->
+        <div
+            class="relative flex justify-center lg:justify-end order-2 lg:order-1"
+        >
+            <!-- Conceptual Diagram: RAM to USB -->
+            <div
+                class="relative w-full max-w-sm aspect-square border border-ink-black/10 rounded-sm bg-white p-8 flex flex-col items-center justify-center gap-8 group"
+            >
+                <!-- RAM Visual -->
+                <div
+                    class="flex flex-col items-center gap-2 relative z-10 transition-transform duration-500 group-hover:-translate-y-2"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-20 h-20 text-ink-black"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="square"
+                        stroke-linejoin="miter"
+                    >
+                        <path d="M4 4h16v16H4z"></path>
+                        <path d="M8 4v4"></path>
+                        <path d="M12 4v4"></path>
+                        <path d="M16 4v4"></path>
+                        <path d="M8 16v4"></path>
+                        <path d="M12 16v4"></path>
+                        <path d="M16 16v4"></path>
+                        <path d="M4 12h16"></path>
+                    </svg>
+                    <span
+                        class="font-mono font-bold text-sm tracking-widest text-ink-black/60"
+                        >SYSTEM RAM</span
+                    >
+                </div>
+
+                <!-- Connection Line (Pulse) -->
+                <div class="h-16 w-px bg-ink-black/20 relative overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 w-full h-1/2 bg-debian-red-muted animate-pulsedown"
+                    >
+                    </div>
+                </div>
+
+                <!-- USB Visual -->
+                <div
+                    class="flex flex-col items-center gap-2 relative z-10 transition-transform duration-500 group-hover:translate-y-2"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-12 h-12 text-slate-gray"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="square"
+                        stroke-linejoin="miter"
+                    >
+                        <path d="M10 14h4v6h-4z"></path>
+                        <path d="M7 7h10v7H7z"></path>
+                        <path d="M8 7V4"></path>
+                        <path d="M16 7V4"></path>
+                        <line x1="12" y1="3" x2="12" y2="7"></line>
+                    </svg>
+                    <span
+                        class="font-mono font-bold text-xs tracking-widest text-slate-gray/60"
+                        >USB STORAGE</span
+                    >
+                </div>
+
+                <!-- Badge -->
+                <div
+                    class="absolute top-4 right-4 border border-dashed border-debian-red-muted/40 px-3 py-1 rounded-sm rotate-12 bg-paper-cream shadow-sm"
+                >
+                    <span
+                        class="text-[10px] font-bold font-sans text-debian-red-muted uppercase tracking-wider"
+                        >USB Lifespan Optimized</span
+                    >
+                </div>
+            </div>
+
+            <!-- Background Decor -->
+            <div
+                class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-ink-black/5 rounded-full opacity-50"
+            >
+            </div>
+        </div>
+
+        <!-- Copy Side (Right) -->
+        <div class="text-center lg:text-left order-1 lg:order-2">
+            <h2
+                class="font-serif text-4xl md:text-5xl font-bold text-ink-black mb-6 leading-tight"
+            >
+                Your OS, <br class="hidden lg:block" /> Floating in <span
+                    class="italic text-debian-red-muted">RAM</span
+                >.
+            </h2>
+
+            <div
+                class="space-y-8 font-sans text-lg text-slate-gray leading-relaxed max-w-xl mx-auto lg:mx-0"
+            >
+                <div class="border-l-2 border-ink-black/10 pl-6">
+                    <h3
+                        class="font-bold text-ink-black text-sm uppercase tracking-wider mb-2"
+                    >
+                        The Problem
+                    </h3>
+                    <p class="text-base text-slate-gray/80">
+                        Constant read/write cycles grind conventional OSs to a
+                        halt and kill flash storage prematurely.
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-debian-red-muted pl-6">
+                    <h3
+                        class="font-bold text-ink-black text-sm uppercase tracking-wider mb-2"
+                    >
+                        The Solution
+                    </h3>
+                    <p>
+                        BookwormPup lives in your RAM. It is blistering fast,
+                        completely silent, and <strong>write-less</strong>. It
+                        only touches your USB drive when you explicitly tell it
+                        to save—or when you shut down.
+                    </p>
+                </div>
+
+                <p class="text-base italic font-serif text-ink-black/60 pt-4">
+                    "Broken a configuration? Simpy reboot without saving. You
+                    return to a pristine state, every time."
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @keyframes pulsedown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    }
+    .animate-pulsedown {
+        animation: pulsedown 2s infinite linear;
+    }
+</style>
