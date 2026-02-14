@@ -1,7 +1,11 @@
+![img](idxpup.png)
+
 # BookwormPup Linux Website
 
 This repository contains the source code for the BookwormPup Linux distribution's informational website. The project is built using the Astro web framework and Tailwind CSS, focusing on a "Modern Retro" aesthetic while providing technical details about the operating system.
-
+---
+![imgv2](bwpup2.png)
+---
 ## Project Description
 
 BookwormPup Linux is a light-weight Linux distribution based on Debian. This website serves as a technical landing page and showcase for the OS, highlighting its architecture, persistence mechanisms, and system requirements.
@@ -67,6 +71,9 @@ To preview the production build locally:
 ```bash
 npm run preview
 ```
+---
+![imgv3](bwpup3.png)
+---
 
 ## Maintenance
 
