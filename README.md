@@ -78,3 +78,9 @@ npm run preview
 ## Maintenance
 
 The website's content is managed through Astro components in `src/components/`. Updates to technical specifications or OS features should be made directly in the corresponding `.astro` files.
+---
+## BOOKWORMPUP OFFICIAL
+- https://bwpup.puppylinux.com/
+- https://forum.puppylinux.com/
+- https://wikka.puppylinux.com/HomePage
+---
